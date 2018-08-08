@@ -1,0 +1,27 @@
+// omposanteR.cpp: implementation of the ComposanteR class.
+//
+//////////////////////////////////////////////////////////////////////
+
+#include "stdafx.h"
+#include "RmtSensing.h"
+#include "omposanteR.h"
+
+#ifdef _DEBUG
+#undef THIS_FILE
+static char THIS_FILE[]=__FILE__;
+#define new DEBUG_NEW
+#endif
+
+//////////////////////////////////////////////////////////////////////
+// Construction/Destruction
+//////////////////////////////////////////////////////////////////////
+
+ComposanteR::ComposanteR()
+{
+
+}
+
+ComposanteR::~ComposanteR()
+{
+
+}

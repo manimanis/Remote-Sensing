@@ -1,0 +1,856 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// French (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 12, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\RmtSensing.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.fra\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.fra\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\RmtSensing.ico"
+IDR_RMTSENTYPE          ICON    DISCARDABLE     "res\\RmtSensingDoc.ico"
+IDR_PICTUREHISTOGRAMME  ICON    DISCARDABLE     "res\\icon1.ico"
+IDI_RGB                 ICON    DISCARDABLE     "res\\ico00001.ico"
+IDI_OUTILS_HISTOGRAMMEDELIMAGE ICON    DISCARDABLE     "res\\outils_h.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDR_RMTSENSINGTOOLBAR   BITMAP  DISCARDABLE     "res\\toolbar1.bmp"
+IDR_PICTUREHISTOGRAMME  BITMAP  DISCARDABLE     "res\\bmp00001.bmp"
+IDB_TFESPLASH           BITMAP  DISCARDABLE     "res\\TFE.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_RMTSENSINGTOOLBAR TOOLBAR DISCARDABLE  16, 16
+BEGIN
+    BUTTON      ID_OUTILS_HISTOGRAMMEDELIMAGE
+    SEPARATOR
+    BUTTON      ID_EDIT_UNDO
+    SEPARATOR
+    BUTTON      ID_OUTILS_EXPANSIONLINAIRE
+    BUTTON      ID_OUTILS_EXPANSIONLINAIREAVECSATURATION
+    BUTTON      ID_OUTILS_EXPANSIONLOGARITHMIQUE
+    BUTTON      ID_OUTILS_EXPANSIONEXPONENTIELLE
+    BUTTON      ID_OUTILS_EXPANSIONLINAIRESEGMENTE
+    SEPARATOR
+    BUTTON      ID_OUTILS_CENTRE
+    BUTTON      ID_OUTILS_AJUSTEXY
+    SEPARATOR
+    BUTTON      ID_OUTILS_COMPOSANTESRGB
+    SEPARATOR
+    BUTTON      ID_PICTURE_INFO
+END
+
+IDR_PICTUREHISTOGRAMME TOOLBAR DISCARDABLE  16, 16
+BEGIN
+    BUTTON      ID_OUTILS_PARAMTRES
+    SEPARATOR
+    BUTTON      ID_OUTILS_COMPOSANTEROUGE
+    BUTTON      ID_OUTILS_COMPOSANTEVERTE
+    BUTTON      ID_OUTILS_COMPOSANTEBLEU
+    SEPARATOR
+    BUTTON      ID_OUTILS_QUADRILLAGEX
+    BUTTON      ID_OUTILS_QUADRILLAGEY
+    SEPARATOR
+    BUTTON      ID_OUTILS_COURBE
+    BUTTON      ID_OUTILS_DISCRET
+    BUTTON      ID_OUTILS_POINTS
+    SEPARATOR
+    BUTTON      ID_OUTILS_ECHELLEY
+    BUTTON      ID_OUTILS_ECHELLEX
+    BUTTON      ID_OUTILS_ECHELLEYENPOURCENT
+    SEPARATOR
+    BUTTON      ID_OUTILS_TITREAXEDESY
+    BUTTON      ID_OUTILS_TITREAXEDESX
+    BUTTON      ID_OUTILS_TITREDUGRAPHE
+    SEPARATOR
+    BUTTON      ID_OUTILS_HISTOGRAMMEUMULATIF
+    BUTTON      ID_OUTILS_HISTOGRAMMEDELIMAGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&Fichier"
+    BEGIN
+        MENUITEM "&Nouveau\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "&Ouvrir...\tCtrl+O",          ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "C&onfiguration de l'impression...", ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Fichier récent",              ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Quitter",                    ID_APP_EXIT
+    END
+    POPUP "&Affichage"
+    BEGIN
+        MENUITEM "&Barre d'outils",             ID_VIEW_TOOLBAR
+        MENUITEM "Barre d'é&tat",               ID_VIEW_STATUS_BAR
+    END
+    POPUP "&?"
+    BEGIN
+        MENUITEM "Aide ",                       ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&A propos de RmtSensing...",  ID_APP_ABOUT
+    END
+END
+
+IDR_RMTSENTYPE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&Fichier"
+    BEGIN
+        MENUITEM "&Nouveau\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "&Ouvrir...\tCtrl+O",          ID_FILE_OPEN
+        MENUITEM "&Fermer",                     ID_FILE_CLOSE
+        MENUITEM "&Enregistrer\tCtrl+S",        ID_FILE_SAVE
+        MENUITEM "En&registrer sous...",        ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Imprimer...\tCtrl+P",        ID_FILE_PRINT
+        MENUITEM "Aperçu a&vant impression",    ID_FILE_PRINT_PREVIEW
+        MENUITEM "C&onfiguration de l'impression...", ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Fichier récent",              ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Quitter",                    ID_APP_EXIT
+    END
+    POPUP "&Edition"
+    BEGIN
+        MENUITEM "&Annuler\tCtrl+Z",            ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "&Couper\tCtrl+X",             ID_EDIT_CUT
+        MENUITEM "&Copier\tCtrl+C",             ID_EDIT_COPY
+        MENUITEM "C&oller\tCtrl+V",             ID_EDIT_PASTE
+    END
+    POPUP "&Affichage"
+    BEGIN
+        MENUITEM "&Barre d'outils",             ID_VIEW_TOOLBAR
+        MENUITEM "Barre d'é&tat",               ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Outils"
+    BEGIN
+        MENUITEM "Histogramme de l'image...",   ID_OUTILS_HISTOGRAMMEDELIMAGE
+
+        MENUITEM SEPARATOR
+        MENUITEM "Expansion Linéaire",          ID_OUTILS_EXPANSIONLINAIRE
+        MENUITEM "Expansion Linéaire avec Saturation", 
+                                                ID_OUTILS_EXPANSIONLINAIREAVECSATURATION
+
+        MENUITEM "Expansion Logarithmique",     ID_OUTILS_EXPANSIONLOGARITHMIQUE
+
+        MENUITEM "Expansion Exponentielle",     ID_OUTILS_EXPANSIONEXPONENTIELLE
+
+        MENUITEM "Expansion Linéaire Segmentée", 
+                                                ID_OUTILS_EXPANSIONLINAIRESEGMENTE
+
+        MENUITEM SEPARATOR
+        MENUITEM "Centré",                      ID_OUTILS_CENTRE
+        MENUITEM "Ajusté (x, y)",               ID_OUTILS_AJUSTEXY
+        MENUITEM SEPARATOR
+        MENUITEM "Composantes (R, G, B)",       ID_OUTILS_COMPOSANTESRGB
+        MENUITEM SEPARATOR
+        MENUITEM "&Informations",               ID_PICTURE_INFO
+    END
+    POPUP "Fe&nêtre"
+    BEGIN
+        MENUITEM "&Nouvelle fenêtre",           ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Mosaïque",                   ID_WINDOW_TILE_HORZ
+        MENUITEM "&Réorganiser les icônes",     ID_WINDOW_ARRANGE
+    END
+    POPUP "&?"
+    BEGIN
+        MENUITEM "&A propos de RmtSensing...",  ID_APP_ABOUT
+        MENUITEM SEPARATOR
+        MENUITEM "Aide ",                       ID_HELP_FINDER
+    END
+END
+
+IDR_PICTUREHISTOGRAMME MENU DISCARDABLE 
+BEGIN
+    POPUP "&Fichier"
+    BEGIN
+        MENUITEM "&Nouveau\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "&Ouvrir...\tCtrl+O",          ID_FILE_OPEN
+        MENUITEM "&Fermer",                     ID_FILE_CLOSE
+        MENUITEM "&Enregistrer\tCtrl+S",        ID_FILE_SAVE
+        MENUITEM "En&registrer sous...",        ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Imprimer...\tCtrl+P",        ID_FILE_PRINT
+        MENUITEM "Aperçu a&vant impression",    ID_FILE_PRINT_PREVIEW
+        MENUITEM "C&onfiguration de l'impression...", ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Fichier récent",              ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Quitter",                    ID_APP_EXIT
+    END
+    POPUP "&Edition"
+    BEGIN
+        MENUITEM "&Annuler\tCtrl+Z",            ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "&Couper\tCtrl+X",             ID_EDIT_CUT
+        MENUITEM "&Copier\tCtrl+C",             ID_EDIT_COPY
+        MENUITEM "C&oller\tCtrl+V",             ID_EDIT_PASTE
+    END
+    POPUP "&Affichage"
+    BEGIN
+        MENUITEM "&Barre d'outils",             ID_VIEW_TOOLBAR
+        MENUITEM "Barre d'é&tat",               ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Outils"
+    BEGIN
+        MENUITEM "&Paramètres ...",             ID_OUTILS_PARAMTRES
+        MENUITEM SEPARATOR
+        MENUITEM "Composante Rouge",            ID_OUTILS_COMPOSANTEROUGE
+        MENUITEM "Composante Verte",            ID_OUTILS_COMPOSANTEVERTE
+        MENUITEM "Composante Bleu",             ID_OUTILS_COMPOSANTEBLEU
+        MENUITEM SEPARATOR
+        MENUITEM "Quadrillage  X",              ID_OUTILS_QUADRILLAGEX
+        MENUITEM "Quadrillage  Y",              ID_OUTILS_QUADRILLAGEY
+        MENUITEM SEPARATOR
+        MENUITEM "Courbe",                      ID_OUTILS_COURBE
+        MENUITEM "Discret",                     ID_OUTILS_DISCRET
+        MENUITEM "Points",                      ID_OUTILS_POINTS
+        MENUITEM SEPARATOR
+        MENUITEM "Echelle Y en pourcent",       ID_OUTILS_ECHELLEYENPOURCENT
+        MENUITEM "Echelle Y",                   ID_OUTILS_ECHELLEY
+        MENUITEM "Echelle X",                   ID_OUTILS_ECHELLEX
+        MENUITEM SEPARATOR
+        MENUITEM "Titre axe des X",             ID_OUTILS_TITREAXEDESX
+        MENUITEM "Titre axe des Y",             ID_OUTILS_TITREAXEDESY
+        MENUITEM "Titre du graphe",             ID_OUTILS_TITREDUGRAPHE
+        MENUITEM SEPARATOR
+        MENUITEM "Histogramme Cumulatif",       ID_OUTILS_HISTOGRAMMEUMULATIF
+
+        MENUITEM "Histogramme de l'image",      ID_OUTILS_HISTOGRAMMEDELIMAGE
+
+    END
+    POPUP "Fe&nêtre"
+    BEGIN
+        MENUITEM "&Nouvelle fenêtre",           ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Mosaïque",                   ID_WINDOW_TILE_HORZ
+        MENUITEM "&Réorganiser les icônes",     ID_WINDOW_ARRANGE
+    END
+    POPUP "&?"
+    BEGIN
+        MENUITEM "Aide ",                       ID_HELP
+        MENUITEM SEPARATOR
+        MENUITEM "&A propos de RmtSensing...",  ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 264, 127
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "A propos..."
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         143,IDC_STATIC,"Static",SS_BITMAP,11,1,243,28,
+                    WS_EX_DLGMODALFRAME
+    CTEXT           "Copyright (C) 2000",IDC_STATIC,187,100,65,13,0,
+                    WS_EX_DLGMODALFRAME
+    CONTROL         142,IDC_STATIC,"Static",SS_BITMAP,187,31,65,56,
+                    WS_EX_DLGMODALFRAME
+    GROUPBOX        "Techniques d'Optimisations Radiométriques",IDC_STATIC,
+                    11,31,173,82,BS_CENTER | BS_FLAT,WS_EX_DLGMODALFRAME
+    CTEXT           "Auteur:\nMANI Mohamed Anis\n\nUne Idée de:\nMr. Joseph BARSICS\n\nEncadreur:\nMr. AZOUZI Maher",
+                    IDC_STATIC,18,43,158,63
+    LTEXT           "Click any where...",IDC_STATIC,103,115,57,8
+END
+
+IDD_PICTUREHISTOGRAME_DLG DIALOG DISCARDABLE  0, 0, 332, 193
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Histogramme de l'image"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Rouge",ID_PICHIST_SETTINGS_RED,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,12,37,10
+    CONTROL         "Bleu",ID_PICHIST_SETTINGS_BLUE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,27,30,10
+    CONTROL         "Vert",ID_PICHIST_SETTINGS_GREEN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,42,29,10
+    CONTROL         "Graphe",ID_PICHIST_SETTINGS_GRAPH_TTL_STATE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,78,13,39,10
+    EDITTEXT        ID_PICHIST_SETTINGS_GRAPH_TTL,120,13,112,12,
+                    ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Axe X",ID_PICHIST_SETTINGS_GRAPH_XTTL_STATE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,78,27,35,10
+    EDITTEXT        ID_PICHIST_SETTINGS_GRAPH_XTTL,120,26,112,12,
+                    ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Axe Y",ID_PICHIST_SETTINGS_GRAPH_YTTL_STATE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,78,41,35,10
+    EDITTEXT        ID_PICHIST_SETTINGS_GRAPH_YTTL,120,39,112,12,
+                    ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Pourcentage",ID_PICHIST_SETTINGS_PERCENTAGE_SCLY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,254,13,57,10
+    CONTROL         "Echelle Y",ID_PICHIST_SETTINGS_SCLY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,254,27,46,10
+    CONTROL         "Echelle X",ID_PICHIST_SETTINGS_SCLX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,254,41,46,10
+    CONTROL         "Max(R, G, B)",ID_PICHIST_SETTINGS_MAXY_RGB,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,10,71,57,10
+    CONTROL         "Utilisateur = ",
+                    ID_PICHIST_SETTINGS_MAXY_USER_PERCENT_RADIO,"Button",
+                    BS_AUTORADIOBUTTON,10,86,55,10
+    EDITTEXT        ID_PICHIST_SETTINGS_MAXY_USER_PERCENT,65,84,35,12,
+                    ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Utilisateur = ",
+                    ID_PICHIST_SETTINGS_MAXY_USER_PIXEL_RADIO,"Button",
+                    BS_AUTORADIOBUTTON,10,100,55,10
+    EDITTEXT        ID_PICHIST_SETTINGS_MAXY_USER_PIXELS,65,98,35,12,
+                    ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Courbe",ID_PICHIST_SETTINGS_GRAPH_TYPE_COURBE,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,145,71,39,10
+    CONTROL         "Discrétisation",ID_PICHIST_SETTINGS_GRAPH_TYPE_DISCRET,
+                    "Button",BS_AUTORADIOBUTTON,205,71,58,10
+    CONTROL         "Points",ID_PICHIST_SETTINGS_GRAPH_TYPE_POINTS,"Button",
+                    BS_AUTORADIOBUTTON,284,70,35,10
+    CONTROL         "Quadrillage X",ID_PICHIST_SETTINGS_XQUADRILLAGE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,145,100,58,10
+    CONTROL         "Quadrllaage Y",ID_PICHIST_SETTINGS_YQUADRILLAGE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,258,101,61,10
+    CONTROL         "Max /",IDC_RADIO_MAXY_DIVN,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,10,126,35,10
+    CONTROL         "Utilisateur =",IDC_RADIO_MAXY_PERCENT_USER,"Button",
+                    BS_AUTORADIOBUTTON,10,141,53,10
+    CONTROL         "Utilisateur = ",IDC_RADIO_MAXY_PIXELS_USER,"Button",
+                    BS_AUTORADIOBUTTON,10,156,55,10
+    EDITTEXT        IDC_MAXY_DIV_N,65,124,35,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_MAXY_PERCENT_USER,65,139,35,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_MAXY_PIXELS_USER,65,154,35,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "Max /",IDC_RADIO_MAXX_DIVN,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,137,124,35,10
+    CONTROL         "Utilisateur =",IDC_RADIO_MAXX_PERCENT_USER,"Button",
+                    BS_AUTORADIOBUTTON,137,139,53,10
+    CONTROL         "Utilisateur = ",IDC_RADIO_MAXX_PIXELS_USER,"Button",
+                    BS_AUTORADIOBUTTON,137,154,55,10
+    EDITTEXT        IDC_MAXX_DIV_N,192,124,35,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_MAXX_PERCENT_USER,192,139,35,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_MAXX_PIXELS_USER,192,154,35,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    DEFPUSHBUTTON   "OK",IDOK,84,172,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,197,172,50,14
+    GROUPBOX        "Défintion des titres",IDC_STATIC,69,3,171,56
+    GROUPBOX        "Composantes",IDC_STATIC,7,3,55,56
+    GROUPBOX        "Echelles",IDC_STATIC,247,3,78,56
+    GROUPBOX        "Max Y",IDC_STATIC,7,61,123,54
+    LTEXT           "%",IDC_STATIC,110,88,8,8
+    LTEXT           "pixels",IDC_STATIC,110,102,18,8
+    GROUPBOX        "Type du graphe",IDC_STATIC,135,61,190,24
+    GROUPBOX        "Quadrillage",IDC_STATIC,135,89,190,26
+    GROUPBOX        "Echelle Y",IDC_STATIC,7,116,123,54
+    LTEXT           "%",IDC_STATIC,110,143,8,8
+    LTEXT           "pixels",IDC_STATIC,110,158,18,8
+    GROUPBOX        "Echelle X",IDC_STATIC,135,116,123,54
+    LTEXT           "%",IDC_STATIC,237,143,8,8
+    LTEXT           "pixels",IDC_STATIC,237,158,18,8
+    CONTROL         142,IDC_STATIC,"Static",SS_BITMAP,264,118,61,52
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040C04B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Application MFC RmtSensing\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "RmtSensing\0"
+            VALUE "LegalCopyright", "Copyright (C) 2000\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "RmtSensing.EXE\0"
+            VALUE "ProductName", "Application RmtSensing\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x40c, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 257
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 120
+    END
+
+    IDD_PICTUREHISTOGRAME_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 325
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 186
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "RmtSensing"
+    IDR_RMTSENTYPE          "\nRmtSen\nRmtSen\n\n\nRmtSensing.Document\nRmtSen Document"
+    IDR_PICTUREHISTOGRAMME  "\nPicHist\nPicHist\n\n\nPicHist.Document\nPicHist Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "RmtSensing"
+    AFX_IDS_IDLEMESSAGE     "Prêt"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "MAJ"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "DEF"
+    ID_INDICATOR_OVR        "ECR"
+    ID_INDICATOR_REC        "ENR"
+    ID_TEXT                 "Ceci est un texte"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Crée un nouveau document\nNouveau"
+    ID_FILE_OPEN            "Ouvre un document existant\nOuvrir"
+    ID_FILE_CLOSE           "Ferme le document actif\nFermer"
+    ID_FILE_SAVE            "Enregistre le document actif\nEnregistrer"
+    ID_FILE_SAVE_AS         "Enregistre le document actif sous un nouveau nom\nEnregistrer sous"
+    ID_FILE_PAGE_SETUP      "Change les options d'impression\nMise en page"
+    ID_FILE_PRINT_SETUP     "Change les options d'imprimante et d'impression\nConfiguration de l'impression"
+    ID_FILE_PRINT           "Imprime le document actif\nImprimer"
+    ID_FILE_PRINT_PREVIEW   "Affiche des pages entières\nAperçu avant impression"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Affiche des informations sur le programme, le numéro de version et le copyright\nA propos de"
+    ID_APP_EXIT             "Ferme l'application ; propose d'enregistrer les documents\nQuitter"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Ouvre ce document"
+    ID_FILE_MRU_FILE2       "Ouvre ce document"
+    ID_FILE_MRU_FILE3       "Ouvre ce document"
+    ID_FILE_MRU_FILE4       "Ouvre ce document"
+    ID_FILE_MRU_FILE5       "Ouvre ce document"
+    ID_FILE_MRU_FILE6       "Ouvre ce document"
+    ID_FILE_MRU_FILE7       "Ouvre ce document"
+    ID_FILE_MRU_FILE8       "Ouvre ce document"
+    ID_FILE_MRU_FILE9       "Ouvre ce document"
+    ID_FILE_MRU_FILE10      "Ouvre ce document"
+    ID_FILE_MRU_FILE11      "Ouvre ce document"
+    ID_FILE_MRU_FILE12      "Ouvre ce document"
+    ID_FILE_MRU_FILE13      "Ouvre ce document"
+    ID_FILE_MRU_FILE14      "Ouvre ce document"
+    ID_FILE_MRU_FILE15      "Ouvre ce document"
+    ID_FILE_MRU_FILE16      "Ouvre ce document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Passe au volet de fenêtre suivant\nVolet suivant"
+    ID_PREV_PANE            "Revient au volet précédent\nVolet précédent"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_NEW           "Ouvre une nouvelle fenêtre pour le document actif\nNouvelle fenêtre"
+    ID_WINDOW_ARRANGE       "Réorganise les icônes en bas de la fenêtre\nRéorganise les icônes"
+    ID_WINDOW_CASCADE       "Réorganise les fenêtres en cascade\nCascade"
+    ID_WINDOW_TILE_HORZ     "Réorganise les fenêtres en une mosaïque\nMosaïque"
+    ID_WINDOW_TILE_VERT     "Réorganise les fenêtres en une mosaïque\nMosaïque"
+    ID_WINDOW_SPLIT         "Réorganise les fenêtres en une mosaïque\nMosaïque"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Efface la sélection\nEffacer"
+    ID_EDIT_CLEAR_ALL       "Efface tout\nEffacer tout"
+    ID_EDIT_COPY            "Copie la sélection et la place dans le Presse-papiers\nCopier"
+    ID_EDIT_CUT             "Supprime la sélection et la place dans le Presse-papiers\nCouper"
+    ID_EDIT_FIND            "Recherche le texte spécifié\nRechercher"
+    ID_EDIT_PASTE           "Insère le contenu du Presse-papiers\nColler"
+    ID_EDIT_REPEAT          "Répète la dernière action\nRépéter"
+    ID_EDIT_REPLACE         "Remplace le texte spécifique par un texte différent\nRemplacer"
+    ID_EDIT_SELECT_ALL      "Sélectionne le document entier\nSélectionner tout"
+    ID_EDIT_UNDO            "Annule la dernière action\nAnnuler"
+    ID_EDIT_REDO            "Rétablit l'action précédemment annulée\nRétablir"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Affiche ou masque la barre d'outils\nBarre d'outils"
+    ID_VIEW_STATUS_BAR      "Affiche ou masque la barre d'état\nBarre d'état"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change la taille de la fenêtre"
+    AFX_IDS_SCMOVE          "Change la position de la fenêtre"
+    AFX_IDS_SCMINIMIZE      "Réduit la fenêtre en icône"
+    AFX_IDS_SCMAXIMIZE      "Agrandit la fenêtre au format de l'écran"
+    AFX_IDS_SCNEXTWINDOW    "Passe à la fenêtre de document suivante"
+    AFX_IDS_SCPREVWINDOW    "Passe à la fenêtre de document précédente"
+    AFX_IDS_SCCLOSE         "Ferme la fenêtre active et propose l'enregistrement des documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restaure la fenêtre à sa taille d'origine"
+    AFX_IDS_SCTASKLIST      "Active la liste des tâches"
+    AFX_IDS_MDICHILD        "Active cette fenêtre"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Ferme le mode d'aperçu avant impression\nFermer l'aperçu"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_PICTURE_INFO         "Quelques informations sur le bitmap\nQuelques informations sur le bitmap"
+    ID_OUTILS_HISTOGRAMMEDELIMAGE 
+                            "Affiche l'histogramme de l'image de l'image\nAffiche l'histogramme de l'image de l'image"
+    ID_OUTILS_PARAMTRES     "Modifie les paramètres su Histogramme.\nModifie les paramètres su Histogramme."
+    ID_OUTILS_COMPOSANTEROUGE 
+                            "Active/Désactive le composante rouge.\nActive/Désactive le composante rouge."
+    ID_OUTILS_COMPOSANTEVERTE 
+                            "Active/Désactive la composante Verte.\nActive/Désactive la composante Verte."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_OUTILS_COMPOSANTEBLEU 
+                            "Active/Désactive la composante Bleu.\nActive/Désactive la composante Bleu."
+    ID_OUTILS_QUADRILLAGEX  "Activer/Désactiver le quadrilage/X\nActiver/Désactiver le quadrilage/X"
+    ID_OUTILS_QUADRILLAGEY  "Activer/Désactiver le quadrilage/Y\nActiver/Désactiver le quadrilage/Y"
+    ID_OUTILS_COURBE        "Affiche les points comme une Courbe\nAffiche les points comme une Courbe."
+    ID_OUTILS_DISCRET       "Affiche les points comme des valeurs Discrète.\nAffiche les points comme des valeurs Discrète."
+    ID_OUTILS_POINTS        "Affiche les points comme un ensemble de Points.\nAffiche les points comme un ensemble de Points."
+    ID_OUTILS_ECHELLEYENPOURCENT 
+                            "Active/Désactive l'afficahage en pourcent\nActive/Désactive l'afficahage en pourcent"
+    ID_OUTILS_ECHELLEY      "Active/Désactive l'affichage de l'échelle/Y\nActive/Désactive l'affichage de l'échelle/Y"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_OUTILS_TITREAXEDESX  "Active/Désactive le Titre du l'axe des X\nActive/Désactive le Titre de l'axe des X"
+    ID_OUTILS_TITREAXEDESY  "Active/Désactive le Titre du l'axe des Y\nActive/Désactive le Titre de l'axe des Y"
+    ID_OUTILS_TITREDUGRAPHE "Active/Désactive le Titre du graphe\nActive/Désactive le Titre du graphe"
+    ID_OUTILS_HISTOGRAMMEUMULATIF 
+                            "Affiche l'histogramme cumulatif\nAffiche l'histogramme cumulatif "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_OUTILS_EXPANSIONLINAIRE 
+                            "Exécute une expansion linéaire sur l'image\nExécute une expansion linéaire sur l'image"
+    ID_OUTILS_CENTR         "Image centré ou proprtionelle à la fenêtre cadre\nImage centré ou proprtionelle à la fenêtre cadre"
+    ID_OUTILS_CENTRE        "Image centré ou proprtionelle à la fenêtre cadre\nImage centré ou proprtionelle à la fenêtre cadre"
+    ID_OUTILS_AJUSTXY       "Conserve l'aspect ratio de l'image\nConserve l'aspect ratio de l'image"
+    ID_OUTILS_AJUSTEXY      "Conserve l'aspect ratio de l'image\nConserve l'aspect ratio de l'image"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_OUTILS_EXPANSIONLINAIREAVECSATURATION 
+                            "Une expansion Linéaire avec Saturation\nUne expansion Linéaire avec Saturation"
+    ID_OUTILS_COMPOSANTESRGB 
+                            "Séparer les composantes (RGB)\nSéparer les composantes (RGB)"
+    ID_OUTILS_EXPANSIONLOGARITHMIQUE 
+                            "Optimisations Logarithmique\nOptimisations Logarithmiques"
+    ID_OUTILS_EXPANSIONEXPONENTIELLE 
+                            "Expansion Exponentielle\nExpansion Exponentielle"
+    ID_OUTILS_EXPANSIONLINAIRESEGMENTE 
+                            "Expansion Linéaire Segmentée\nExpansion Linéaire Segmentée"
+END
+
+#endif    // French (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// French (Belgium) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRB)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH_BELGIAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_PICTUREHISTOGRAMME_DLG BITMAP  DISCARDABLE     "res\\bmp00002.bmp"
+IDB_OPTIMISATION_RADIO  BITMAP  DISCARDABLE     "res\\OptimisationRadio.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SPLASHSCREEN DIALOG DISCARDABLE  0, 0, 266, 184
+STYLE WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+IDD_OPTIMISATIONS_DLG DIALOG DISCARDABLE  0, 0, 324, 266
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Optimisations"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Tab1",IDC_PROPERTY_SHEET,"SysTabControl32",WS_TABSTOP,7,
+                    7,310,202
+    EDITTEXT        IDC_CURRENT_POINT,26,227,25,12,ES_CENTER | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_X_COORDS,73,227,25,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_Y_COORDS,114,227,25,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAX_POINTS,277,227,25,12,ES_CENTER | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,61,245,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,212,245,50,14
+    LTEXT           ", y : ",IDC_STATIC,100,228,14,8
+    GROUPBOX        "Point Courant",IDC_STATIC,7,214,141,29
+    LTEXT           "Nbre de points",IDC_STATIC,225,228,47,8
+    LTEXT           "pt[",IDC_STATIC,15,228,8,8
+    LTEXT           "] = (x : ",IDC_STATIC,52,228,22,8
+    LTEXT           ")",IDC_STATIC,139,228,8,8
+    GROUPBOX        "Paramètres",IDC_STATIC,154,214,157,29
+    CONTROL         "R = V = B",IDC_R_EQUAL_V_B,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,163,229,47,10
+END
+
+IDD_PICTURE_HISTOGRAMME DIALOGEX 0, 0, 431, 246
+STYLE WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_CAPTION | WS_SYSMENU | 
+    WS_THICKFRAME
+EXSTYLE WS_EX_CLIENTEDGE
+MENU IDR_PICTUREHISTOGRAMME
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_SPLASHSCREEN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 259
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 177
+    END
+
+    IDD_OPTIMISATIONS_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 317
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 259
+    END
+
+    IDD_PICTURE_HISTOGRAMME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 424
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 239
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // French (Belgium) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE 12, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\RmtSensing.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.fra\afxres.rc"          // Standard components
+#include "l.fra\afxprint.rc"        // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

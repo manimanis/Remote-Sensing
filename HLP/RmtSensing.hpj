@@ -1,0 +1,17 @@
+; This file is maintained by HCW. Do not modify this file directly.
+
+[OPTIONS]
+COMPRESS=60 Hall Zeck
+ERRORLOG=TestHelp.LOG
+LCID=0x40c 0x0 0x0 ; Français - standard
+REPORT=Yes
+CONTENTS=main_index
+TITLE=Aide de l'application TESTHELP
+BMROOT=.
+BMROOT=..
+ROOT=..
+ROOT=.
+HLP=.\RmtSensing.hlp
+
+[FILES]
+afxcore.rtf

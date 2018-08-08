@@ -1,0 +1,17 @@
+Microsoft (R) Help Compiler
+HCRTF 4.03.0002
+Copyright (c) Microsoft Corp 1990 - 1995. All rights reserved.
+rmtsensing.hpj
+    HC4009: Warning: 
+	The Topic ID "main_index" specified in the Project files as the Default Topic does not exist.
+4	Topics
+3	Jumps
+0	Keywords
+4	Bitmaps
+
+
+Created D:\ManiWork\ImgAnalysis\NewRmtSensing\hlp\RmtSensing.hlp, 150,268 bytes
+Bitmaps: 140,896 bytes
+Hall+Zeck compression decreased help file by 1,434 bytes.
+Compile time: 0 minutes, 14 seconds
+0 notes, 1 warning

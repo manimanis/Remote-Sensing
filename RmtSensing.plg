@@ -1,0 +1,100 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: RmtSensing - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\TEMP\RSP242.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/RmtSensing.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\ManiWork\ImgAnalysis\NewRmtSensing\Hstogramme.cpp"
+]
+Creating command line "cl.exe @C:\TEMP\RSP242.tmp" 
+Creating temporary file "C:\TEMP\RSP243.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/RmtSensing.pdb" /debug /machine:I386 /out:"Debug/RmtSensing.exe" /pdbtype:sept 
+.\Debug\BitmapManipulations.obj
+.\Debug\ChildFrm.obj
+.\Debug\Common.obj
+.\Debug\ComposanteB.obj
+.\Debug\ComposanteG.obj
+.\Debug\ComposanteR.obj
+.\Debug\ComposantesRGB.obj
+.\Debug\ExponentialExpansion.obj
+.\Debug\ExponentialOptimisationsDlg.obj
+.\Debug\Hstogramme.obj
+.\Debug\LinearExpansion.obj
+.\Debug\LinearOptimisationDlg.obj
+.\Debug\LogarithmicExpansion.obj
+.\Debug\LogarithmicOptimisationsDlg.obj
+.\Debug\LookUpTables.obj
+.\Debug\MainFrm.obj
+.\Debug\OptimisationsDlg.obj
+.\Debug\PictureHistogrammeFrame.obj
+.\Debug\PictureHistogrammeSettingsDlg.obj
+.\Debug\PictureHistogrammeView.obj
+.\Debug\PIeceWiseLinearExpansion.obj
+.\Debug\PieceWiseLinearOptimisationDlg.obj
+.\Debug\RmtSensing.obj
+.\Debug\RmtSensingDoc.obj
+.\Debug\RmtSensingFrame.obj
+.\Debug\RmtSensingView.obj
+.\Debug\SaturatingLinearExpansion.obj
+.\Debug\SaturatingLinearOptimisationDlg.obj
+.\Debug\SplashScreen.obj
+.\Debug\StdAfx.obj
+.\Debug\RmtSensing.res
+]
+Creating command line "link.exe @C:\TEMP\RSP243.tmp"
+<h3>Output Window</h3>
+Compiling...
+Hstogramme.cpp
+D:\ManiWork\ImgAnalysis\NewRmtSensing\Hstogramme.cpp(840) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+D:\ManiWork\ImgAnalysis\NewRmtSensing\Hstogramme.cpp(842) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+Linking...
+Creating temporary file "C:\TEMP\RSP244.tmp" with contents
+[
+/nologo /o"Debug/RmtSensing.bsc" 
+.\Debug\StdAfx.sbr
+.\Debug\BitmapManipulations.sbr
+.\Debug\ChildFrm.sbr
+.\Debug\Common.sbr
+.\Debug\ComposanteB.sbr
+.\Debug\ComposanteG.sbr
+.\Debug\ComposanteR.sbr
+.\Debug\ComposantesRGB.sbr
+.\Debug\ExponentialExpansion.sbr
+.\Debug\ExponentialOptimisationsDlg.sbr
+.\Debug\Hstogramme.sbr
+.\Debug\LinearExpansion.sbr
+.\Debug\LinearOptimisationDlg.sbr
+.\Debug\LogarithmicExpansion.sbr
+.\Debug\LogarithmicOptimisationsDlg.sbr
+.\Debug\LookUpTables.sbr
+.\Debug\MainFrm.sbr
+.\Debug\OptimisationsDlg.sbr
+.\Debug\PictureHistogrammeFrame.sbr
+.\Debug\PictureHistogrammeSettingsDlg.sbr
+.\Debug\PictureHistogrammeView.sbr
+.\Debug\PIeceWiseLinearExpansion.sbr
+.\Debug\PieceWiseLinearOptimisationDlg.sbr
+.\Debug\RmtSensing.sbr
+.\Debug\RmtSensingDoc.sbr
+.\Debug\RmtSensingFrame.sbr
+.\Debug\RmtSensingView.sbr
+.\Debug\SaturatingLinearExpansion.sbr
+.\Debug\SaturatingLinearOptimisationDlg.sbr
+.\Debug\SplashScreen.sbr]
+Creating command line "bscmake.exe @C:\TEMP\RSP244.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+RmtSensing.exe - 0 error(s), 2 warning(s)
+</pre>
+</body>
+</html>
